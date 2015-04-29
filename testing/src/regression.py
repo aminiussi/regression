@@ -1008,3 +1008,7 @@ class runner:
             ]
 
 
+if __name__ == '__main__':
+    root = os.path.abspath(os.path.realpath(os.path.curdir))
+    print '# Running regressions in %s...' % root
+    runner(root)
